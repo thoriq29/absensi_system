@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thoriq.absensismea.Activity.QRScanner">
+    <fragment
+        android:id="@+id/scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="info.androidhive.barcode.BarcodeReader"
+        app:auto_focus="true"
+        app:use_flash="false">
+
+    </fragment>
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:id="@+id/tv1"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:paddingTop="50dp"
+        android:text="Scan a QR code / Barcode"/>
+
+
+    <info.androidhive.barcode.ScannerOverlay
+        android:id="@+id/kotak"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:line_color="@color/colorPrimary"
+        app:line_speed="5"
+        android:background="#44000000"
+        app:square_height="350"
+        app:square_width="350"
+        app:line_width="4">
+    </info.androidhive.barcode.ScannerOverlay>
+</RelativeLayout>

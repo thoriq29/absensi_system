@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single" android:enabled="false" >
+        <item android:id="@+id/home" android:title="Home" android:icon="@drawable/ic_home_black_24px" />
+        <item android:id="@+id/scan" android:title="Absen Siswa dengan QR" android:icon="@drawable/ic_search_black_24dp"/>
+        <item android:id="@+id/daftar" android:title="Daftar Hadir Siswa" android:icon="@drawable/ic_format_list_numbered_black_24dp"/>
+        <item android:id="@+id/tugas" app:actionLayout="@layout/counter" android:contentDescription="Tugas" android:title="Tugas dari Guru Piket" android:icon="@drawable/ic_book_black_24px" />
+        <item android:id="@+id/log" android:title="Logout" android:icon="@drawable/ic_lock_open_black_24dp"/>
+    </group>
+</menu>

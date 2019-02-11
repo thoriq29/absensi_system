@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:padding="19dp"
+    android:layout_height="160dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fotoSekolahHeader"
+        android:src="@drawable/icon"
+        android:layout_width="70dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="9dp"
+        android:layout_height="70dp" />
+    <TextView
+        android:id="@+id/namaSekolahHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fotoSekolahHeader"
+        android:textColor="#757575"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:text="ABSENSI - SMK NEGERI 2 SUKABUMI"/>
+    <TextView
+        android:id="@+id/alamatSekolahHeader"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/namaSekolahHeader"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#757575"
+        android:text="Jl. Pelabuhan II Cipoho, Cikondang"/>
+    <ImageView
+        android:id="@+id/imgCek"
+        android:layout_below="@+id/fotoSekolahHeader"
+        android:layout_toRightOf="@+id/namaSekolahHeader"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/ic_check_black_24dp"
+        android:layout_width="20dp"
+        android:visibility="invisible"
+        android:layout_height="20dp" />
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center_vertical"
+        android:text="PILIH KETERANGAN"
+        android:background="#44000000"
+        android:textColor="#fff"
+        android:paddingLeft="25dp"
+        android:textSize="15dp" />
+    <RadioGroup
+        android:layout_below="@+id/tv1"
+        android:id="@+id/rg"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rbHadir"
+            android:text="Hadir"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rbSakit"
+            android:text="Sakit"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rbIzin"
+            android:text="Izin"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rbAlfa"
+            android:text="Alfa"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnBatal"
+        android:text="Batal"
+        android:textColor="@color/colorPrimary"
+        android:background="@null"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rg"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+    <Button
+        android:id="@+id/btnPilih"
+        android:text="simpan"
+        android:textColor="#fff"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorPrimary"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rg"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp" />
+</RelativeLayout>

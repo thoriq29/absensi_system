@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fotoSiswa"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:civ_circle_background_color="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/namaSiswa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/fotoSiswa"
+            android:text="Jawa Barat"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/NISSIswa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/namaSiswa"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/fotoSiswa"
+            android:text="13.3 Inch, 256 GB"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#757575" />
+
+        <ImageView
+            android:id="@+id/kelasJurusan"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/stopwatch"
+            android:layout_marginTop="1dp"
+            android:paddingRight="20dp"
+             />
+
+        <TextView
+            android:id="@+id/idSiswa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namaSiswa"
+            android:layout_toRightOf="@+id/NISSIswa"
+            android:text="ajsasas"
+            android:textColor="#757575"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

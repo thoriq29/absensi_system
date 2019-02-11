@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/topLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_marginTop="?attr/actionBarSize"
+    android:layout_height="match_parent"
+    tools:context="com.thoriq.absensismea.Home">
+
+    <LinearLayout
+        android:id="@+id/li"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="Data Siswa "
+        android:textColor="@android:color/black"
+        android:textSize="25dp" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/foto_siswa"
+            android:layout_width="200dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:src="@drawable/a"
+            app:civ_border_overlay="true"
+            app:civ_fill_color="@color/colorPrimary"
+            app:civ_circle_background_color="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_height="200dp" />
+        <TextView
+            android:id="@+id/nama_siswa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="Nama : Moh Torikul Azis "
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/kelas_siswa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="Kelas : XII RPL "
+            android:textColor="@android:color/black"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_simpan_siswa"
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="SUDAH Hadir"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"/>
+<ProgressBar
+    android:id="@+id/pg"
+    android:layout_marginTop="200dp"
+    android:layout_width="match_parent"
+    android:layout_height="100dp" />
+</RelativeLayout>
+

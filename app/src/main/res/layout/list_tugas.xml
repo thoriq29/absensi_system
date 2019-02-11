@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+
+        <TextView
+            android:id="@+id/NamaTugas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_toRightOf="@id/fotoSiswa"
+            android:text="Menggambar"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/Ket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/NamaTugas"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:text="13.3 Inch, 256 GB"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="#757575" />
+
+        <TextView
+            android:id="@+id/idTugas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NamaTugas"
+            android:layout_toRightOf="@+id/Ket"
+            android:text="ajsasas"
+            android:textColor="#757575"
+            android:visibility="invisible" />
+        <TextView
+            android:id="@+id/namaGuru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Ket"
+            android:textSize="16dp"
+            android:layout_alignParentRight="true"
+            android:text="Neng Rika Susanti "
+            android:textColor="#757575"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
+

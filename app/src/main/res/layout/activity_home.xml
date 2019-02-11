@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerL"
+    tools:context="com.thoriq.absensismea.Home">
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:orientation="vertical"
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/lyerror"
+        android:layout_width="match_parent"
+        android:background="#ff0000"
+        android:layout_alignParentBottom="true"
+        android:layout_height="23dp">
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#fff"
+        android:gravity="center_vertical"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="Anda sedang berada diluar sekolah, untuk sementara Menu tidak dapat digunakan. Silahkan datang ke sekolah untuk mengakses semua Menu di aplikasi"/>
+    </RelativeLayout>
+    </RelativeLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/viewD"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="#19B293"
+        app:itemTextColor="#fff"
+        app:itemIconTint="#fff"
+        app:menu="@menu/drawer_profile"
+        android:layout_gravity="start"
+        >
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
